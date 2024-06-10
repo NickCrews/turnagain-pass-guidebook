@@ -1,0 +1,81 @@
+# Current Conditions
+
+<div id='danger-map'></div>
+<link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+<style> #danger-map { height: 400px; } </style>
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+<script>
+function makeInitMap(id) {
+    const map = L.map(id).setView([60.8, -149], 9);
+    L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    return map;
+}
+
+function getDangerData() {
+    // Try curl this to look at the data
+    const URL = 'https://api.avalanche.org/v2/public/products/map-layer/CNFAIC';
+    return fetch(URL)
+        .then(response => response.json())
+        .then(data => data)
+        .catch(error => console.error(error));
+}
+
+// The returned GeoJSON has multiple features, one for each forecast zone of the CNFAIC.
+// Here is a copy of the properties of one of the features:
+// "properties": {
+//                 "name": "Turnagain Pass ",
+//                 "center": "Chugach NF Avalanche Information Center",
+//                 "center_link": "http:\/\/www.cnfaic.org\/",
+//                 "timezone": "America\/Anchorage",
+//                 "center_id": "CNFAIC",
+//                 "state": "AK",
+//                 "off_season": true,
+//                 "travel_advice": "Watch for signs of unstable snow such as recent avalanches, cracking in the snow, and audible collapsing. Avoid traveling on or under similar slopes.",
+//                 "danger": "no rating",
+//                 "danger_level": -1,
+//                 "color": "#888888",
+//                 "stroke": "#104efb",
+//                 "font_color": "#ffffff",
+//                 "link": "http:\/\/www.cnfaic.org\/advisories\/current.php",
+//                 "start_date": null,
+//                 "end_date": null,
+//                 "fillOpacity": 0.5,
+//                 "fillIncrement": 0.1,
+//                 "warning": {
+//                     "product": null
+//                 }
+//             },
+function addDangerLayer(map, data) {
+    const layer = L.geoJSON(data, {
+        filter: function(feature, layer) {
+            return (feature.properties.name.includes('Turnagain Pass'));
+        },
+        style: function (feature) {
+            return {
+                color: feature.properties.color
+            };
+        },
+        onEachFeature: function (feature, layer) {
+            layer.bindTooltip(
+                feature.properties.danger,
+                {direction: 'center', className: 'text-center', sticky: true}
+            );
+            layer.on('click', function () {
+                window.location = feature.properties.link;
+            });
+        }
+    });
+    layer.addTo(map);
+}
+
+const map = makeInitMap('danger-map');
+getDangerData().then(data => addDangerLayer(map, data));
+</script>
