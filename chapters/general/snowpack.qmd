@@ -1,1 +1,8 @@
-# Snowpack
+# Snowpack and Avalanches
+
+Turnagain Pass has a maritime snowpack, receiving hundreds of inches of
+snow (and often, rain) a year.
+
+The local avalanche center is
+[CNFAIC](https://www.cnfaic.org/forecast/turnagain/)
+(Chugach National Forest Avalanche Information Center).

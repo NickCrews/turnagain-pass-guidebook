@@ -29,7 +29,6 @@ book:
         - chapters/general/terrain.qmd
         - chapters/general/weather.qmd
         - chapters/general/snowpack.qmd
-        - chapters/general/avalanches.qmd
     - part: Areas
       chapters:
         - chapters/areas/overview.qmd
