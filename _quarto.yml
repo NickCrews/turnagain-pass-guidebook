@@ -1,0 +1,51 @@
+project:
+  type: book
+
+book:
+  title: "Turn, Again"
+  subtitle: "A Guide to Turnagain Pass, Alaska"
+  author: "Nick Crews and Friends"
+  license: "Public Domain"
+  date: "6/9/2024"
+  sidebar:
+    logo: assets/cover.jpg
+  cover-image: assets/cover.jpg
+  cover-image-alt: |
+    Cute watercolor of an tiny green alien skiing a very snowy mountain.
+  page-navigation: true
+  downloads: [pdf]
+  repo-url: https://github.com/NickCrews/turnagain-pass-guidebook/
+  repo-actions: [edit]
+  page-footer:
+    center: 
+      - text: "License"
+        href: chapters/license.qmd
+  chapters:
+    - index.qmd
+    - chapters/howto.qmd
+    - part: General Information
+      chapters:
+        - chapters/general/index.qmd
+        - chapters/general/terrain.qmd
+        - chapters/general/weather.qmd
+        - chapters/general/snowpack.qmd
+        - chapters/general/avalanches.qmd
+    - part: Areas
+      chapters:
+        - chapters/areas/overview.qmd
+        - chapters/areas/eddies.qmd
+        - chapters/areas/tincan.qmd
+        - chapters/areas/sunburst.qmd
+        - chapters/areas/magnum.qmd
+        - chapters/areas/lipps.qmd
+        - chapters/areas/petes.qmd
+
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
