@@ -1,0 +1,50 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Turn, Again",
+    "section": "",
+    "text": "Welcome\nYour companion for skiing in Turnagain Pass, Alaska",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Turn, Again",
+    "section": "Goals",
+    "text": "Goals\n\nOpen Source\nThis is your public land. Info on it should be too. If you don’t like this info, you are free to fork your own version and change it to your liking.\n\n\nCommunity Driven\nPlease submit corrections and suggestions. The help of many will polish this to it’s best version. Note that I reserve the right to make final decisions (for now)\n\n\nUseful\nMaps, descriptions, etc can actually help you plan a trip. eg where is good for a storm day? What are your exit options for high-avalanche danger day?\n\n\nDigital-first\nWe can do better than book-only guidebooks. We have PDF export for offline use and printing, of course. But just as good is a website, allowing for - search - interactive maps - links and external resources - live conditions - realtime corrections and updates - etc.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Turn, Again",
+    "section": "License",
+    "text": "License\nAll work is given to the public domain. Any contributions will also be public domain.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "chapters/areas/tincan.html",
+    "href": "chapters/areas/tincan.html",
+    "title": "8  Tincan",
+    "section": "",
+    "text": "Tincan is the most popular area in Turnagain Pass, and one of the most popular areas in all of Alaska.",
+    "crumbs": [
+      "Areas",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Tincan</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/license.html",
+    "href": "chapters/license.html",
+    "title": "Licence",
+    "section": "",
+    "text": "Released into the public domain. All contributions are also public domain."
+  }
+]
