@@ -56,9 +56,6 @@
     //             },
     function addDangerLayer(map, data) {
         const layer = L.geoJSON(data, {
-            // filter: function(feature, layer) {
-            //     return (feature.properties.name.includes('Turnagain Pass'));
-            // },
             style: function (feature) {
                 return {
                     color: feature.properties.color,

@@ -10,7 +10,7 @@ book:
   favicon: assets/favicon.png
   page-navigation: true
   downloads: [pdf]
-  repo-url: https://github.com/NickCrews/turnagain-pass-guidebook/
+  repo-url: https://github.com/NickCrews/turnagain-guide
   repo-actions: [edit]
   page-footer:
     center: 
