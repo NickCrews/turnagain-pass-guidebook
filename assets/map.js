@@ -2,7 +2,7 @@
 // import * as Cesium from "https://cesium.com/downloads/cesiumjs/releases/1.87.1/Build/Cesium/Cesium.js";
 
 async function makeWidget(elementId) {
-    // Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NjQ5YjhjOS01Y2UyLTRhYWEtOGEzZC1hZDZmZWI0NGQ3MTQiLCJpZCI6MjIxMjE4LCJpYXQiOjE3MTgwMDk5MDB9._pdWlrUxdAtIiuq3PXK8HrRNxcoJa6bOjwWE8cQ3J3Y';
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NjQ5YjhjOS01Y2UyLTRhYWEtOGEzZC1hZDZmZWI0NGQ3MTQiLCJpZCI6MjIxMjE4LCJpYXQiOjE3MTgwMDk5MDB9._pdWlrUxdAtIiuq3PXK8HrRNxcoJa6bOjwWE8cQ3J3Y';
     const viewer = new Cesium.Viewer(elementId, {
         timeline: false,
         animation: false,
