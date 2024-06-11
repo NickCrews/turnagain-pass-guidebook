@@ -36,16 +36,15 @@ async function makeWidget(elementId) {
         Cesium.GeoJsonDataSource.load(
             // consider using simplestyle-spec to style the geojson
             // https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
-          "https://github.com/NickCrews/turnagain-pass-guidebook/raw/main/assets/objects.geojson",
-        //   "../../assets/objects.geojson",
+            
+            // Needs to use the raw.githubusercontent.com link to avoid CORS issues per
+            // https://stackoverflow.com/a/71359956/5156887
+            "https://raw.githubusercontent.com/NickCrews/turnagain-pass-guidebook/main/assets/objects.geojson",
+            //   "../../assets/objects.geojson",
           {
-            stroke: Cesium.Color.HOTPINK,
-            fill: Cesium.Color.PINK.withAlpha(0.5),
-            strokeWidth: 3,
+            clampToGround: true,
+            credit: "",
           }
         )
       );
-
-    // See the demo for "clamp to ground" for terrain at
-    // https://sandcastle.cesium.com/?src=Clamp%20Entities%20to%20Ground.html&label=Terrain
 }
