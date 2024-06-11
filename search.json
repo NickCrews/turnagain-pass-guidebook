@@ -30,14 +30,36 @@
     ]
   },
   {
+    "objectID": "chapters/general/snowpack.html",
+    "href": "chapters/general/snowpack.html",
+    "title": "4  Snowpack and Avalanches",
+    "section": "",
+    "text": "Turnagain Pass has a maritime snowpack, receiving hundreds of inches of snow (and often, rain) a year.\nThe local avalanche center is CNFAIC (Chugach National Forest Avalanche Information Center).",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Snowpack and Avalanches</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/areas/overview.html",
+    "href": "chapters/areas/overview.html",
+    "title": "5  Areas Overview",
+    "section": "",
+    "text": "Explore the map above to find an area to study.",
+    "crumbs": [
+      "Areas",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Areas Overview</span>"
+    ]
+  },
+  {
     "objectID": "chapters/areas/tincan.html",
     "href": "chapters/areas/tincan.html",
-    "title": "8  Tincan",
+    "title": "7  Tincan",
     "section": "",
     "text": "Tincan is the most popular area in Turnagain Pass, and one of the most popular areas in all of Alaska.",
     "crumbs": [
       "Areas",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Tincan</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Tincan</span>"
     ]
   },
   {
