@@ -12,6 +12,7 @@ book:
   cover-image: assets/cover.jpg
   cover-image-alt: |
     Cute watercolor of an tiny green alien skiing a very snowy mountain.
+  favicon: assets/favicon.png
   page-navigation: true
   downloads: [pdf]
   repo-url: https://github.com/NickCrews/turnagain-pass-guidebook/
