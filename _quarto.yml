@@ -3,10 +3,8 @@ project:
 
 book:
   title: "Turn, Again"
-  subtitle: "A Guide to Turnagain Pass, Alaska"
-  author: "Nick Crews and Friends"
+  subtitle: "A Backcountry Ski Guide to Turnagain Pass, Alaska"
   license: "Public Domain"
-  date: "6/9/2024"
   sidebar:
     logo: assets/cover.jpg
   favicon: assets/favicon.png
