@@ -7,6 +7,9 @@ async function makeWidget(elementId) {
         timeline: false,
         animation: false,
         baseLayerPicker: false,
+        geocoder: false,
+        homeButton: false,
+        sceneModePicker: false,
     });
     const scene = viewer.scene;
     scene.globe.depthTestAgainstTerrain = true;
