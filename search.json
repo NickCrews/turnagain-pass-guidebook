@@ -4,63 +4,77 @@
     "href": "index.html",
     "title": "Turn, Again",
     "section": "",
-    "text": "Welcome\nYour companion for skiing in Turnagain Pass, Alaska",
+    "text": "Welcome",
     "crumbs": [
-      "Welcome"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
-    "objectID": "index.html#goals",
-    "href": "index.html#goals",
+    "objectID": "index.html#map",
+    "href": "index.html#map",
     "title": "Turn, Again",
-    "section": "Goals",
-    "text": "Goals\n\nOpen Source\nThis is your public land. Info on it should be too. If you don’t like this info, you are free to fork your own version and change it to your liking.\n\n\nCommunity Driven\nPlease submit corrections and suggestions. The help of many will polish this to it’s best version. Note that I reserve the right to make final decisions (for now)\n\n\nUseful\nMaps, descriptions, etc can actually help you plan a trip. eg where is good for a storm day? What are your exit options for high-avalanche danger day?\n\n\nDigital-first\nWe can do better than book-only guidebooks. We have PDF export for offline use and printing, of course. But just as good is a website, allowing for - search - interactive maps - links and external resources - live conditions - realtime corrections and updates - etc.",
+    "section": "Map",
+    "text": "Map",
     "crumbs": [
-      "Welcome"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
-    "objectID": "index.html#license",
-    "href": "index.html#license",
+    "objectID": "index.html#current-conditions",
+    "href": "index.html#current-conditions",
     "title": "Turn, Again",
-    "section": "License",
-    "text": "License\nAll work is given to the public domain. Any contributions will also be public domain.",
+    "section": "Current Conditions",
+    "text": "Current Conditions",
     "crumbs": [
-      "Welcome"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Home</span>"
     ]
   },
   {
     "objectID": "chapters/general/snowpack.html",
     "href": "chapters/general/snowpack.html",
-    "title": "4  Snowpack and Avalanches",
+    "title": "5  Snowpack and Avalanches",
     "section": "",
     "text": "Turnagain Pass has a maritime snowpack, receiving hundreds of inches of snow (and often, rain) a year.\nThe local avalanche center is CNFAIC (Chugach National Forest Avalanche Information Center).",
     "crumbs": [
       "General Information",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Snowpack and Avalanches</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Snowpack and Avalanches</span>"
     ]
   },
   {
     "objectID": "chapters/areas/overview.html",
     "href": "chapters/areas/overview.html",
-    "title": "5  Areas Overview",
+    "title": "6  Areas Overview",
     "section": "",
     "text": "Explore the map above to find an area to study.",
     "crumbs": [
       "Areas",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Areas Overview</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Areas Overview</span>"
     ]
   },
   {
     "objectID": "chapters/areas/tincan.html",
     "href": "chapters/areas/tincan.html",
-    "title": "7  Tincan",
+    "title": "8  Tincan",
     "section": "",
     "text": "Tincan is the most popular area in Turnagain Pass, and one of the most popular areas in all of Alaska.",
     "crumbs": [
       "Areas",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Tincan</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Tincan</span>"
     ]
+  },
+  {
+    "objectID": "chapters/about.html",
+    "href": "chapters/about.html",
+    "title": "About",
+    "section": "",
+    "text": "Goals"
+  },
+  {
+    "objectID": "chapters/about.html#goals",
+    "href": "chapters/about.html#goals",
+    "title": "About",
+    "section": "",
+    "text": "Open Source\nThis is your public land. Info on it should be too. If you don’t like this info, you are free to fork your own version and change it to your liking.\n\n\nCommunity Driven\nPlease submit corrections and suggestions. The help of many will polish this to it’s best version. Note that I reserve the right to make final decisions (for now)\n\n\nUseful\nMaps, descriptions, etc can actually help you plan a trip. eg where is good for a storm day? What are your exit options for high-avalanche danger day?\n\n\nDigital-first\nWe can do better than book-only guidebooks. We have PDF export for offline use and printing, of course. But just as good is a website, allowing for - search - interactive maps - links and external resources - live conditions - realtime corrections and updates - etc."
   },
   {
     "objectID": "chapters/license.html",
