@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Turn, Again</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/NickCrews/turnagain-pass-guidebook/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/NickCrews/turnagain-guide" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <a href="./Turn,-Again.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
@@ -305,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
 
             // Needs to use the raw.githubusercontent.com link to avoid CORS issues per
             // https://stackoverflow.com/a/71359956/5156887
-            "https://raw.githubusercontent.com/NickCrews/turnagain-pass-guidebook/main/assets/objects.geojson",
+            "https://raw.githubusercontent.com/NickCrews/turnagain-guide/main/assets/objects.geojson",
             //   "../../assets/objects.geojson",
             {
                 clampToGround: true,
@@ -381,9 +381,6 @@ ul.task-list li input[type="checkbox"] {
     //             },
     function addDangerLayer(map, data) {
         const layer = L.geoJSON(data, {
-            // filter: function(feature, layer) {
-            //     return (feature.properties.name.includes('Turnagain Pass'));
-            // },
             style: function (feature) {
                 return {
                     color: feature.properties.color,
@@ -849,7 +846,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/NickCrews/turnagain-pass-guidebook/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/NickCrews/turnagain-guide/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
