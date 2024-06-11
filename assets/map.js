@@ -29,25 +29,27 @@ async function makeWidget(elementId) {
         scene.globe.show = false;
         worldTileset.show = true;
     } catch (error) {
-        console.log(`Error loading Photorealistic 3D Tiles tileset.
-      ${error}`);
+        console.log(`Error loading Photorealistic 3D Tiles tileset. ${error}`);
     }
     // TODO: use open-source tile providers to get rid of warnings.
     // https://gist.github.com/banesullivan/e3cc15a3e2e865d5ab8bae6719733752#file-cesium-viewer-no-token-html
 
-    viewer.dataSources.add(
-        Cesium.GeoJsonDataSource.load(
-            // consider using simplestyle-spec to style the geojson
-            // https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
-            
-            // Needs to use the raw.githubusercontent.com link to avoid CORS issues per
-            // https://stackoverflow.com/a/71359956/5156887
-            "https://raw.githubusercontent.com/NickCrews/turnagain-pass-guidebook/main/assets/objects.geojson",
-            //   "../../assets/objects.geojson",
-          {
+    const dataSource = Cesium.GeoJsonDataSource.load(
+        // consider using simplestyle-spec to style the geojson
+        // https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
+
+        // Needs to use the raw.githubusercontent.com link to avoid CORS issues per
+        // https://stackoverflow.com/a/71359956/5156887
+        "https://raw.githubusercontent.com/NickCrews/turnagain-pass-guidebook/main/assets/objects.geojson",
+        //   "../../assets/objects.geojson",
+        {
             clampToGround: true,
             credit: "",
-          }
-        )
-      );
+        }
+    )
+    viewer.dataSources.add(dataSource);
+    viewer.zoomTo(
+        dataSource, new Cesium.HeadingPitchRange(Cesium.Math.toRadians(135), Cesium.Math.toRadians(-50), 2000)
+    );
+
 }
