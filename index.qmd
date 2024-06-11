@@ -1,4 +1,5 @@
 ---
+title: "Home"
 format:
   html:
     toc: false
@@ -7,4 +8,11 @@ format:
 
 # Welcome {.unnumbered}
 
+## Map {.unnumbered}
+
 {{< include /assets/mapWidget.html >}}
+
+
+## Current Conditions {.unnumbered}
+
+{{< include /assets/dangerWidget.html >}}
